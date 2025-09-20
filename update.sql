@@ -1,0 +1,1 @@
+ALTER TABLE `item` ADD `category` TINYTEXT NOT NULL AFTER `image`;

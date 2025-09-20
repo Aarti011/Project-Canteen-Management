@@ -1,0 +1,144 @@
+
+.check{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+.check-container{
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+
+    margin: 5% auto 5% auto;
+    padding: 2% 10% 2% 10%;
+    width: 70%;
+}
+
+.check-container:hover {
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    z-index: 2;
+}
+
+.item{
+    margin-top: 1%;
+    display: flex;
+
+}
+#deleteItem{
+    align-items: right;
+    padding-left: 100px;
+}
+#itemName{
+    text-align: left;
+}
+.item-box{
+    text-align: center;
+    width: 25%;
+}
+.cart-btn{
+    background-color: #fff;
+    border-radius: 100%;
+    border: 1px solid grey;
+}
+.cart-btn:hover{
+    background-color: #1aae9f;
+}
+
+.item input{
+    width: 15%;
+    margin: 0 1% 0 1%;
+    text-align: center;
+}
+.item input::-webkit-outer-spin-button,
+.item input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+hr{
+    margin-top: 3%;
+}
+.checkout-btn{
+    background-color: #1aae9f;
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+    color: #fff;
+}
+/* css for payment page  */
+.pay-container{
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 5% auto 5% auto;
+    padding: 2% 10% 2% 5%;
+    width: 70%;
+}
+/* set display property to none by default  */
+#payupi,#paycard,#pod{
+    display: none;
+}
+
+.vr{
+    height: 100%;
+    background-color: rgb(118, 133, 118);
+    margin: 0 5rem 0 5rem;
+}
+.pay-method li {
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.pay-method li a {
+    text-decoration: none;
+    color: black;
+}
+#pay-meth li:hover{
+    background: linear-gradient(to right, #FF416C, #ff6014);
+}
+
+#paycard input::-webkit-outer-spin-button,
+#paycard input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* paycard css */
+
+#number{
+    width: 80%;
+}
+
+#CardForm input,.col select {
+    border-radius: 6px ;
+    border: 1px solid grey;
+    padding: 1%;
+}
+#name{
+    margin: 3.5% 0 3.5% 0;
+}
+.emptymsg {
+    text-align: center;
+}
+.emptymsg h1{
+    color: crimson;
+
+}
+@media (max-width:786px){
+    .check-container{
+        margin-top: 15%;
+    }
+    .incre{
+        width: 80%;
+    }
+    #deleteItem{
+        padding-left: 45px;
+    }
+}
+
